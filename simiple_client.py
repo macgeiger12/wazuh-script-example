@@ -107,7 +107,7 @@ class Client:
                   'wait_for_complete': wait_for_complete}
 
         if status:
-            if isinstance(list, status):
+            if isinstance(status, list):
                 status = ','.join(item for item in status)
                 params.update({'status': status})
 
